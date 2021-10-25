@@ -8,8 +8,6 @@ class KotlinSpringbootTestApplicationTests {
 
     @Test
     fun contextLoads() {
-        var list = mutableListOf<Any>();
-        println(list.size)
     }
 
 }
