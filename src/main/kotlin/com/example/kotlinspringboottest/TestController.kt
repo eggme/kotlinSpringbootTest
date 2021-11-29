@@ -21,8 +21,8 @@ class TestController {
     @Autowired private lateinit var memberRepository: MemberRepository
 
     /**
-    Mono -> 0~1개의 결과만을 처리하기 위한 Reactor의 객체
-    Flux -> 0~N개의 결과를 처리하는 객체
+        Mono -> 0~1개의 결과만을 처리하기 위한 Reactor의 객체
+        Flux -> 0~N개의 결과를 처리하는 객체
      */
 
     @GetMapping(value = ["/testRest"])
@@ -44,14 +44,7 @@ class TestController {
                         map
                     }
                 }
-            }.reduce { oldMap, currentMap ->
-                {
-                    linkedMapOf<String, Long>().apply {
-                        this.putAll(oldMap.invoke())
-                        this.putAll(currentMap.invoke())
-                    }
-                }
-            }
+            }.reduce { oldMap, currentMap -> {linkedMapOf<String, Long>().apply {    }} }
             Flux.zip(collectList, groupItem) { distinct, countMap -> FruitInfo(distinct, countMap.invoke()) }
         }.subscribe{
             println(it)
