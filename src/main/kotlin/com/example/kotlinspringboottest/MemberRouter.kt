@@ -8,7 +8,7 @@ import org.springframework.web.reactive.function.server.router
 @Configuration
 class MemberRouter(private val handler: FirstHandler) {
 
-
+    // Rebase Test 1
     @Bean
     fun routerFunction() = router {
         "/test".nest {
