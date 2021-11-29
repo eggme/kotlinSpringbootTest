@@ -6,7 +6,7 @@ import org.springframework.web.reactive.config.EnableWebFlux
 
 @SpringBootApplication
 class KotlinSpringbootTestApplication
-
+// 찐 수정
 fun main(args: Array<String>) {
-    runApplication<KotlinSpringbootTestApplication>(*args)
+    runApplication<KotlinSpringbootTestApplication>(*args) // ddd
 }
