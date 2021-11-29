@@ -6,7 +6,7 @@ import java.time.LocalDateTime
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
 import javax.persistence.Id
-
+// test
 @Entity
 data class Members (@Id @GeneratedValue val mbno: Int?){
     var name: String? = null
@@ -15,3 +15,5 @@ data class Members (@Id @GeneratedValue val mbno: Int?){
     @CreatedDate val createdAt: LocalDateTime = LocalDateTime.now()
     @LastModifiedDate var modifiedAt : LocalDateTime = LocalDateTime.now()
 }
+// ddddddd
+//ttttttt
