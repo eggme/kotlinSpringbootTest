@@ -6,3 +6,4 @@ import org.springframework.stereotype.Repository
 @Repository
 interface MemberRepository: JpaRepository<Members, Int>{
 }
+/// 테스튼ㄴㄴㄴㄴㄴssss
