@@ -13,7 +13,6 @@ data class Members (@Id @GeneratedValue val mbno: Int?){
     var age: Int? = 0
     var done: Boolean = false
     // 테스트
-    // Rebase Test
     @CreatedDate val createdAt: LocalDateTime = LocalDateTime.now()
     @LastModifiedDate var modifiedAt : LocalDateTime = LocalDateTime.now()
 }
